@@ -16,17 +16,19 @@ header{
    display:flex;
 } 
 
-nav{
+  nav{
     margin-left: auto;
    
     
+   
+}  
    
    
 
     
    
    
-} 
+ 
 
 
 
@@ -37,10 +39,10 @@ h1{
 }
 
 .link{
-    color: yellow;
+    color: #fff;
     padding: 2px;
     text-decoration-color: maroon;
-   
+   font-weight: 9000;
     
 }
 
@@ -54,6 +56,7 @@ body{
 } 
 div{
     display: flex;
+    justify-content: space-between;
    
    
 }
@@ -71,9 +74,10 @@ margin: 20px;
 h2{
    
   
- flex-direction: column; 
- margin-top: auto;
+ 
+  margin-top: auto; 
  flex: 1;
+ 
 
 color: white;
 
@@ -87,8 +91,16 @@ section{
     display: flex;
  margin: auto;
  border: 5px ;
- border-style: ridge;  
+ border-style: ridge; 
+ justify-content: center; 
+ align-items: center;
 }
+
+section .first{
+    display: block;
+}
+   
+   
 h3{
     padding: 20px;
     font-size: 25px;
@@ -122,13 +134,7 @@ width: 100%;
     height: auto;
     
 }
-.logo2{
-    width: 100px;
-    height: 50px;
-   
-    
-   
-}
+
 
 .container2{
    
@@ -139,12 +145,7 @@ width: 100%;
       
 }
 
-.logo3{
-    width: 100px;
-    height: 50px;
-   
-   
-}
+
 
 .container3{
    
@@ -155,6 +156,8 @@ width: 100%;
        
      
 }
+
+
 
 
 
@@ -175,8 +178,33 @@ a{
     flex-direction: column; 
  margin-top: auto;
  flex: 1;
+ justify-content: space-evenly;
     
 } 
+
+@media screen and  (max-width: 600px) {
+    header{
+        display: block;
+    } 
+
+    
+}
+@media screen and(max-width:600px){
+    nav{
+        display: grid;
+    }
+}
+@media screen and(max-width:600px){
+    div{
+        display: block;
+    }
+}
+@media screen and (max-width:600px){
+    section{
+        display: block;
+    }
+}
+
 
 
 
